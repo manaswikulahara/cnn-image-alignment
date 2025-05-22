@@ -102,6 +102,5 @@ Please add a LICENSE file to define official usage rights.
 
 Yong et al.,  
 *"Learning Feature Transformations with CNNs for Image Alignment"*  
-📌 Add a proper citation if used in publications.
 
 ---
