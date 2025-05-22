@@ -16,6 +16,17 @@ This repository contains the code and dataset used for deep learning-based **ima
 
 ## 🗂️ Directory Structure
 
+```
+cnn-image-alignment/
+├── classes/                    # Python helper classes
+├── DataSet_Yong.ipynb         # Dataset preparation
+├── cnn_geometric.ipynb        # Model architecture and training
+├── data_Construct.ipynb       # Data transformation and loading
+├── test_train_split.ipynb     # Train-test split creation
+├── *.csv                      # Training/testing data splits
+├── *.py                       # Supporting Python modules
+└── README.md                  # This file
+```
 
 ---
 
@@ -29,7 +40,68 @@ This repository contains the code and dataset used for deep learning-based **ima
 
 ## 🚀 Quick Start
 
-Clone this repo:
+### 1. Clone the repository
 ```bash
 git clone https://github.com/manaswikulahara/cnn-image-alignment.git
 cd cnn-image-alignment
+```
+
+### 2. Install required dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Train the model
+```bash
+python train.py
+```
+
+Or use the Jupyter Notebooks (`*.ipynb`) for interactive execution.
+
+---
+
+## 📁 Datasets
+
+This implementation uses the **Yong et al.** dataset.
+
+Custom CSVs are used for loading paired images:
+- `train_yong.csv`
+- `test_yong.csv`
+
+Each CSV contains paths to paired input images for alignment tasks.
+
+---
+
+## 🧠 Model Details
+
+The CNN model learns to estimate transformation parameters such as affine or thin plate spline (TPS) directly from input image pairs.
+
+### 🔧 Core Modules:
+- `point_tnf.py` – Thin Plate Spline transformer
+- `loss.py` – Alignment loss functions
+- `cnn_geometric_model_yong.py` – Model backbone
+
+---
+
+## ✍️ Author
+
+**Manaswi Kulahara**  
+*M.Sc. Geoinformatics*  
+🔗 [GitHub Profile](https://github.com/manaswikulahara)
+
+---
+
+## 📄 License
+
+This project is intended for educational and research purposes.  
+Please add a LICENSE file to define official usage rights.
+
+---
+
+## 📚 Reference
+
+Yong et al.,  
+*"Learning Feature Transformations with CNNs for Image Alignment"*  
+📌 Add a proper citation if used in publications.
+
+---
