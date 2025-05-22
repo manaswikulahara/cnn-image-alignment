@@ -94,8 +94,6 @@ The CNN model learns to estimate transformation parameters such as affine or thi
 ## 📄 License
 
 This project is intended for educational and research purposes.  
-Please add a LICENSE file to define official usage rights.
-
 ---
 
 ## 📚 Reference
